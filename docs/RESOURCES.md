@@ -1,5 +1,13 @@
 # Resources
 
+## Table of Contents
+
+- [Resources](#resources)
+  - [Table of Contents](#table-of-contents)
+  - [Tooling](#tooling)
+  - [Libraries](#libraries)
+  - [Tutorials](#tutorials)
+
 ## Tooling
 - Compiler: [Retro68](https://github.com/autc04/Retro68)
 - Emulator: [the Gryphel Project](https://www.gryphel.com/)

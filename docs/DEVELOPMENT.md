@@ -2,9 +2,27 @@
 
 This document details all steps needed to go from written code to an executable in the emulator.
 
+## Perquisites
+
+- [Development](#development)
+  - [Perquisites](#perquisites)
+  - [Prerequisites](#prerequisites)
+  - [Creating executable binaries](#creating-executable-binaries)
+  - [Getting an executable into the emulator](#getting-an-executable-into-the-emulator)
+
+
+## Prerequisites
+
+- You have followed [the initial setup guide](./SETUP.md) 
+- Docker
+
 ## Creating executable binaries
 
-// Todo
+There's a general build script which will take all code in `src` and compile it into the `dist` folder.
+
+```bash
+./build.sh
+```
 
 ## Getting an executable into the emulator
 
