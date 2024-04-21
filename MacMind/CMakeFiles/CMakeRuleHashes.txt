@@ -1,0 +1,4 @@
+# Hashes of file build rules.
+4abcd8c2874fea722cba677233a57c3c CMakeFiles/nuklear_quickdraw_APPL
+80352fbb0fbcbabfc64bacfa706be22d mac_main.r.rsrc.bin
+60976a683d828fb6d9ebaf021a8e5b12 nuklear_quickdraw.bin

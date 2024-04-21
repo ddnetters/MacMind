@@ -1,6 +1,10 @@
 emulation/*.ROM
 emulation/*_installed.dsk
 
+build/
+.vscode/
+
+.DS_Store
 Retro68
 
 dist/*
