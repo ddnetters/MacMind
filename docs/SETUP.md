@@ -2,6 +2,12 @@
 
 This document will help you setup a System 6 emulator for local development. It's written for MacOS silicon systems.
 
+- [Setup](#setup)
+  - [Required files](#required-files)
+  - [Using the preinstalled floppy](#using-the-preinstalled-floppy)
+  - [Creating a new OS floppy](#creating-a-new-os-floppy)
+
+
 ## Required files
 
 Most required files can be found in the [emulation](emulation) folder. It should contain:
@@ -31,8 +37,6 @@ The existing system floppy is preinstalled with System Software 6.0.8 with a siz
 Navigate to the Mini vMac app and open it. You'll be presented by the following screen. Your Macintosh computer is booted and waiting for a disk image to be inserted
 
 ![Mini vMac waiting for a disk image](./images/Mini%20vMac%20boot.png)
-
-## Installing the OS
 
 With the emulator open, drag the file [MacOS_6.0.8_System_Startup.img](../emulation/MacOS_6.0.8_System_Startup.img) onto the emulator. The system will boot to a desktop environment.
 
