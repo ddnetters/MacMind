@@ -1,4 +1,5 @@
 emulation/*.ROM
+emulation/*_installed.dsk
 
 build/
 .vscode/
