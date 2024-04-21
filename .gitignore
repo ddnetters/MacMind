@@ -9,3 +9,6 @@ Retro68
 
 dist/*
 !dist/.gitkeep
+
+tooling/*
+!tooling/.gitkeep

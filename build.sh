@@ -1,4 +1,5 @@
 echo "Building MacMind"
+cd "tooling"
 
 echo "Fetching Retro68"
 if [ ! -d "Retro68" ]; then
@@ -12,7 +13,7 @@ git pull
 echo "Copying source code"
 rm -rf MacMind
 mkdir MacMind
-cp -r ../src/* MacMind
+cp -r ../../src/* MacMind
 
 echo "Building MacMind"
 docker run --rm -v $(pwd):/root -i ghcr.io/autc04/retro68 /bin/bash <<"EOF"
