@@ -1,1 +1,6 @@
 emulation/*.ROM
+
+build/
+.vscode/
+
+.DS_Store

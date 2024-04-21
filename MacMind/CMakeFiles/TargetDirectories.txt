@@ -1,0 +1,4 @@
+/Users/steyn.potze/SysSoftGPT/MacMind/CMakeFiles/nuklear_quickdraw.dir
+/Users/steyn.potze/SysSoftGPT/MacMind/CMakeFiles/nuklear_quickdraw_APPL.dir
+/Users/steyn.potze/SysSoftGPT/MacMind/CMakeFiles/edit_cache.dir
+/Users/steyn.potze/SysSoftGPT/MacMind/CMakeFiles/rebuild_cache.dir
