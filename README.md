@@ -7,10 +7,10 @@ Embracing the sleek and intuitive design ethos of Apple in 1988, MacMind seamles
 
 Prepare to discover a new realm of possibilities with MacMind, where technology meets tradition.
 
-## Table of content
+## Table of Contents
 
 - [MacMind](#macmind)
-  - [Table of content](#table-of-content)
+  - [Table of Contents](#table-of-contents)
   - [Documentation](#documentation)
     - [Getting the project running](#getting-the-project-running)
     - [Reference material](#reference-material)

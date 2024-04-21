@@ -5,3 +5,7 @@ build/
 .vscode/
 
 .DS_Store
+Retro68
+
+dist/*
+!dist/.gitkeep
