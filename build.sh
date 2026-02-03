@@ -24,7 +24,7 @@ docker run --rm -v $(pwd):/root -i ghcr.io/autc04/retro68 /bin/bash <<"EOF"
 EOF
 
 echo "Copying distribution files"
-cp MacMind/build/* ../dist
+cp MacMind/build/* ../../dist
 
 echo "Cleaning up"
 rm -rf MacMind

@@ -53,6 +53,44 @@
 #include "Types.r"
 #include "mac_main.h"
 
+/* SIZE resource flags - may not be defined in Retro68 */
+#ifndef dontSaveScreen
+#define dontSaveScreen          0
+#define saveScreen              1
+#endif
+#ifndef acceptSuspendResumeEvents
+#define acceptSuspendResumeEvents   1
+#define doesntAcceptSuspendResumeEvents 0
+#endif
+#ifndef enableOptionSwitch
+#define enableOptionSwitch      1
+#define disableOptionSwitch     0
+#endif
+#ifndef canBackground
+#define canBackground           1
+#define cannotBackground        0
+#endif
+#ifndef multiFinderAware
+#define multiFinderAware        1
+#define notMultiFinderAware     0
+#endif
+#ifndef backgroundAndForeground
+#define backgroundAndForeground 1
+#define onlyBackground          0
+#endif
+#ifndef dontGetFrontClicks
+#define dontGetFrontClicks      0
+#define getFrontClicks          1
+#endif
+#ifndef ignoreChildDiedEvents
+#define ignoreChildDiedEvents   0
+#define acceptChildDiedEvents   1
+#endif
+#ifndef not32BitCompatible
+#define not32BitCompatible      0
+#define is32BitCompatible       1
+#endif
+
 /* this is a definition for a resource which contains only a rectangle */
 type 'RECT' {
 	rect;

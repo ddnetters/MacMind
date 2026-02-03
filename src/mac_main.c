@@ -13,14 +13,22 @@
 #include <SegLoad.h>
 #include <Files.h>
 #include <OSUtils.h>
-#include <DiskInit.h>
-#include <Packages.h>
+/* #include <DiskInit.h> - not available in Retro68 */
+/* #include <Packages.h> - not used, not available in Retro68 */
 #include <Traps.h>
 #include <Serial.h>
 #include <Devices.h>
 #include <stdio.h>
 #include <string.h>
 #include "mac_main.h"
+
+/* TrapType constants - may not be defined in Retro68 */
+#ifndef ToolTrap
+#define ToolTrap 1
+#endif
+#ifndef OSTrap
+#define OSTrap 0
+#endif
 
 //#define PROFILING 1
 #ifdef PROFILING
@@ -447,14 +455,16 @@ void DoEvent(EventRecord *event, struct nk_context *ctx) {
         /*	1.01 - It is not a bad idea to at least call DIBadMount in response
             to a diskEvt, so that the user can format a floppy. */
         case diskEvt:
-            
+
             #ifdef MAC_APP_DEBUGGING
                 writeSerialPortDebug(boutRefNum, "disk");
             #endif
+            /* DIBadMount not available in Retro68
             if ( HiWord(event->message) != noErr ) {
                 SetPt(&aPoint, kDILeft, kDITop);
                 err = DIBadMount(aPoint, event->message);
             }
+            */
             break;
 
         case osEvt:
@@ -674,14 +684,15 @@ void DoMenuCommand(menuResult)
                     Boolean hasSetDefaultStartup = false;
                     if (is128KROM)
                     {
+                        UniversalProcPtr trapUnimpl = GetOSTrapAddress(_Unimplemented);
                         UniversalProcPtr trapSysEnv = GetOSTrapAddress(_SysEnvirons);
                         UniversalProcPtr trapStripAddr = GetOSTrapAddress(_StripAddress);
-                        UniversalProcPtr trapSetDefaultStartup = GetOSTrapAddress(_SetDefaultStartup);
-                        UniversalProcPtr trapUnimpl = GetOSTrapAddress(_Unimplemented);
+                        /* _SetDefaultStartup not available in Retro68 */
+                        UniversalProcPtr trapSetDefaultStartup = trapUnimpl;
 
                         hasSysEnvirons = (trapSysEnv != trapUnimpl);
                         hasStripAddr = (trapStripAddr != trapUnimpl);
-                        hasSetDefaultStartup = (trapSetDefaultStartup != trapUnimpl);
+                        hasSetDefaultStartup = false; /* disabled - trap not available */
                     }
                     
                     sprintf(str2, "is128KROM: %d - hasSysEnvirons: %d - hasStripAddr: %d - hasSetDefaultStartup - %d", 

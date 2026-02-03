@@ -20,7 +20,7 @@
 #include <MacTypes.h>
 #include <Types.h>
 #include <Quickdraw.h>
-#include <Scrap.h>
+/* #include <Scrap.h> - try without, functions may be declared elsewhere in Retro68 */
 #include <Serial.h>
 #include "SerialHelper.h"
 
